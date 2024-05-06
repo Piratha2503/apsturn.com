@@ -1,11 +1,20 @@
 import React from 'react';
-import LearnImg from "../imgs/company/learn.svg";
+
 import Image from 'next/image';
 const Culture = () => {
     return (
         <div className='flex justify-center'>
         
-            <div className=' md:w-10/12 flex'>
+            hi
+        </div>
+    );
+};
+
+export default Culture;
+
+/*
+
+<div className=' md:w-10/12 flex'>
             <div className='w-2/3 p-5 flex flex-col gap-3'>
                 <div>
                 <h6 className='text-FrontPageHeadSizeMobile text-lightGray'>Our Culture</h6>
@@ -26,8 +35,5 @@ const Culture = () => {
             <Image src={LearnImg} alt='' className=''/>
             </div>
             </div>    
-        </div>
-    );
-};
 
-export default Culture;
+*/
