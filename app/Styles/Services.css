@@ -1,0 +1,52 @@
+.contentMain{
+@apply flex flex-col items-center
+}
+.contentSub{
+@apply bg-secondaryGray md:h-[60vh] w-full
+flex mob:flex-col mob:gap-5
+}
+.contentImage{
+@apply md:w-[45%] mob:w-full flex justify-end
+}
+.contentTitle{
+@apply md:w-[55%] flex flex-col items-center justify-center mob:py-3 gap-7
+}
+.contentTitle>h1{
+@apply md:text-8xl mob:text-FrontPageHeadSizeMobile text-primaryGray font-semibold
+}
+.contentTitle>h3{
+@apply text-6xl mob:text-FrontPageSubHeadSize font-bold text-primaryGreen
+}
+.serviceTitleMain{
+@apply flex justify-center py-5
+}
+.serviceTitleSub{
+@apply md:w-10/12 mob:w-full flex md:flex-wrap mob:flex-col 
+py-3 px-2 justify-center gap-3
+}
+.serviceTitleContentMain{
+@apply border-r-2 md:w-[24%] mob:w-full py-3 flex flex-col gap-3 bg-secondaryGray
+}
+.serviceTitleContentHead{
+    @apply flex gap-3 items-center cursor-pointer pl-1
+}
+.serviceTitleContentHead > h1{
+    @apply md:text-FrontPageSubHeadSize mob:text-lg text-primaryGray font-medium
+}
+.titleContentDescription{
+    @apply flex text-center px-5 text-sm text-primaryGray
+}
+.titleContentViewMore{
+    @apply flex justify-end text-sm text-secondaryGreen font-semibold pr-2
+}
+
+.FullStackTitle{
+    @apply h-1/2 bg-secondaryGray flex flex-col justify-center items-center
+    text-8xl font-bold text-primaryGray text-center
+}
+.ServicePageSubHeading{
+    @apply md:text-3xl font-semibold text-primaryGreen mob:text-FrontPageSubHeadSize
+}
+.ServicePageSubHeadingDesc{
+    @apply md:text-sm font-medium text-lightGray px-6 text-justify mob:text-xs
+}

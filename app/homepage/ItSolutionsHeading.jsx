@@ -20,7 +20,7 @@ const ItSolutionsHeading = () => {
        <SolTitles/> 
       </div>
       </div>
-      <Image src={TechImg} alt='' className=' z-0'/>  
+      <Image src={TechImg} alt='' className=' z-0 mob:hidden'/>  
       </div>
     </div>
   );

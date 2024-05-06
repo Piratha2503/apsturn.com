@@ -13,6 +13,11 @@ import Card from "./homepage/Card"
 import Technology from "./homepage/Technology"
 import WhyUs from "./homepage/WhyUs"
 import './Styles/Homepage.css'
+import './Styles/About.css'
+import './Styles/Services.css'
+import MyImages from "./imgs/MyImages";
+
+import ReachUs from "./homepage/ReachUs"
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -25,12 +30,14 @@ export default function Home() {
     <ItSolutionsHeading/>
     <Test/>
     <Slides/>
-    <Test/>
     <WhyUs/>
+    <div className="h-10"> </div>
+    <Technology/>
     <Test/>
     <ParalaxValues/>
     <div className="h-10"></div>
     <UserFeedback/>
+    <ReachUs/>
     <div className="h-10"></div>
     <FooterMenu/>
     </div>

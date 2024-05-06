@@ -1,34 +1,38 @@
 import React from 'react';
 import Image from 'next/image';
-import userFeedback from '../imgs/userEmoji.png'; 
+import CustomerCare from '../imgs/CustomerCare.svg'; 
 import { Button, Input } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 const UserFeedback = () => {
   return (
 
     <div className='userFeedback' >
-    <div className='userFeedbackSub' >
-    <div className='user'> 
-    <h1> Feedback Drives Excellence </h1>
-    <h3> We always ready to learn from mistakes </h3>
+    <div className='userFeedbackSub ' >
+    <div className='user '> 
+    <h1 className=''> Connect with Us </h1>
+    <h3> Priority: Your Satisfaction Our Focus </h3>
     </div>
     <div className='feedbackImageAndInputs'>
     
-    <div className='feedbackImage'> 
-    <Image src={userFeedback} alt=''/>
+    <div className='feedbackImage '> 
+    <Image src={CustomerCare} alt=''/>
     </div>
-    <div className='feedbackInputs'>
+    <div className='feedbackInputs '>
     <div className='feedbackInputSub'>
-    <div className='flex w-full justify-between'>
-    <Input placeholder='Name' className='h-11 w-[44vh] rounded-none font-medium'/>
-    <Input placeholder='Mobile' className='h-11 w-[44vh] rounded-none font-medium' />
+    <div className='flex w-full justify-between gap-2'>
+    <Input placeholder='Name' className='md:h-11 md:w-[44vh] mob:w-[27vh] rounded-none font-medium hover:border-primaryGreen'/>
+    <Input placeholder='Mobile' className='md:h-11 md:w-[44vh] mob:w-[27vh] rounded-none font-medium hover:border-primaryGreen' />
     </div>
-    <Input placeholder='Email' className='h-11 rounded-none w-[94vh] font-medium' />
-    <TextArea placeholder='Comments' className='h-[50vh] w-[94vh] rounded-none font-medium' style={{
+    <Input placeholder='Email' className='md:h-11 rounded-none md:w-[94vh] font-medium hover:border-primaryGreen' />
+    <TextArea placeholder='Comments' className='md:h-[50vh] mob:h-[30vh] md:w-[94vh] rounded-none font-medium
+    hover:border-primaryGreen' style={{
         height: "25vh",
         resize: 'none',
+        
       }}/> 
-    <Button type='default' className='w-3/12 h-12 rounded-none text-lg font-medium bg-secondaryGray text-primaryGreen' style={{}}> Submit </Button>
+    <button type='default' className='w-3/12 h-12 
+    rounded-none text-lg font-medium bg-gray-300 text-primaryGreen
+    hover:text-secondaryGreen hover:bg-secondaryGray' style={{}}> Submit </button>
     </div>
     
     </div>

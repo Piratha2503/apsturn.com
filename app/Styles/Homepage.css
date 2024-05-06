@@ -26,7 +26,7 @@ justify-between mob:w-full
 .TopNavUl{
 
 @apply md:flex md:items-center md:pb-0 pb-12 absolute 
-md:static mob:pt-3 font-bold text-xs text-primaryGreen 
+md:static mob:pt-3 font-medium text-xs text-primaryGreen 
 md:pl-0 pl-3 md:space-x-10 mob:space-y-5 transition-all 
 duration-500 ease-in bg-gray-300 z-10 mob:flex-col
 
@@ -42,12 +42,12 @@ duration-500 ease-in bg-gray-300 z-10 mob:flex-col
 }
 .paraValues{
     @apply bg-fixed md:h-[100vh] items-center z-0 md:bg-no-repeat
-    md:p-5 flex md:justify-end mob:justify-center mob:h-[40dvh] 
+    md:p-5 flex md:justify-start mob:justify-center mob:h-[40dvh] 
     mob:pl-7
 }
 .paraVal{
-    @apply md:h-[60vh] md:w-6/12 bg-white mr-[8%] 
-    flex flex-col text-center items-center opacity-80 mob:w-full
+    @apply md:h-[60vh] md:w-6/12 bg-white 
+    flex flex-col text-center items-center md:ml-[8%] opacity-80 mob:w-full
 }
 .valDiv{
    @apply md:text-[10vh] mob:text-3xl font-semibold text-center
@@ -62,40 +62,50 @@ duration-500 ease-in bg-gray-300 z-10 mob:flex-col
 }
 .TecSolMain{
     
-    @apply w-full flex justify-center items-center bg-secondaryGray
+    @apply w-full flex justify-center items-center bg-secondaryGray mob:pt-3
 }
 .TechSolImgDesc{
-    @apply md:w-10/12 md:p-7 flex justify-between
-    mob:flex-col mob:w-full mob:p-3 mob:justify-center 
-    mob:items-center mob:gap-5
+    @apply md:w-10/12 md:p-7 flex justify-between mob:flex-wrap mob:w-full mob:p-3 mob:gap-5
 
 }
 .TechImg{
     @apply border-2 rounded-r-3xl shadow-gray-600 
-    drop-shadow-xl mob:w-[35vh] mob:shadow-lg 
+    drop-shadow-xl mob:w-[20vh] mob:shadow-md mob:rounded-sm
 }
 .TechSolDesc{
     @apply text-center p-3 flex flex-col items-center justify-center
-    mob:gap-5
+    mob:gap-1
 }
 .TechSolDesc{
     @apply md:pl-10
 }
 .TechSolDesc > h1{
-@apply md:text-FrontPageHeadSize font-bold text-primaryGreen mob:text-4xl
+@apply md:text-FrontPageHeadSize font-bold text-primaryGreen 
+mob:text-FrontPageHeadSizeMobile mob:hidden
 }
-.TechSolDesc > h3{
+.TechSolDesc>h3{
     @apply md:text-FrontPageSubHeadSize font-semibold text-primaryGray mt-[-2vh]
+    mob:hidden
 }
 .TechSolDesc > p{
     @apply text-justify md:p-5 text-sm leading-6 text-primaryGray
+}
+.TechSolHeadMob{
+    @apply flex flex-col justify-center items-center
+    font-semibold text-primaryGreen  md:hidden
+}
+.TechSolHeadMob>h1{
+    @apply text-FrontPageHeadSizeMobile  text-center
+}
+.TechSolHeadMob>h3{
+    @apply text-lg font-medium text-primaryGray
 }
 .ItSolMain{
     @apply flex justify-center items-center mob:flex-col mob:gap-2
 
 }
 .ItSolHead{
-    @apply md:w-10/12 md:h-[92.5vh] mob:flex-col
+    @apply md:w-10/12 md:h-[92.5vh] mob:flex-col mob:gap-10
 }
 .ItSolHeadBody{
     @apply w-8/12 flex flex-col justify-center
@@ -112,7 +122,7 @@ mob:flex-col mob:items-center mob:w-full
 }
 .ItSolHeadBody>h1{
     @apply md:text-FrontPageHeadSize font-bold text-primaryGray
-    mob:text-3xl 
+    mob:text-FrontPageHeadSizeMobile 
 }
 .ItSolHeadBody>p{
 @apply text-justify md:p-12 text-lightGray leading-7 
@@ -135,49 +145,103 @@ mob:text-sm mob:p-3
 }
 .userFeedback{ @apply flex justify-center items-center gap-2 }
 
-.feedbackImageAndInputs{ @apply flex gap-1 h-[70vh] }
+.feedbackImageAndInputs{ @apply flex md:gap-1 md:h-[70vh] mob:flex-col
+mob:justify-center items-center}
 
 .feedbackInputs{
-    @apply w-8/12 flex p-5 justify-center
+    @apply md:w-8/12 flex p-5 justify-center
 }
 .feedbackInputSub{
-    @apply w-10/12 flex flex-wrap justify-around items-end
+    @apply md:w-10/12 flex flex-wrap justify-around items-end md:gap-7 mob:gap-2
 }
 .user{
-    @apply flex flex-col text-center items-center gap-5 p-1 w-full
+    @apply flex flex-col text-center items-center md:gap-5 p-1 w-full
 }
 .user>h1{
-   @apply text-FrontPageHeadSize font-semibold text-primaryGray leading-[9vh]
+   @apply text-FrontPageHeadSize font-semibold text-primaryGreen leading-[9vh]
+   mob:text-FrontPageHeadSizeMobile
 }
 .user>h3{
-@apply text-FrontPageSubHeadSize font-semibold text-lightGray
+@apply text-FrontPageSubHeadSize font-semibold text-primaryGray mob:text-lg
 }
 .feedbackImage{
-   @apply w-4/12 p-1 flex items-end
+   @apply w-1/2 p-1 flex items-center
 }
 .userFeedbackSub{
-    @apply w-10/12 flex-col
+    @apply md:w-10/12 flex-col mob:w-full
+}
+.WhyUsMain{
+@apply h-[80vh] flex mob:flex-col items-center relative 
+mob:h-[85vh] mob:justify-end
 }
 .WhyUsBgDiv{
-    @apply bg-secondaryGray
+    @apply bg-secondaryGray h-3/4 w-full z-0 absolute flex md:justify-end 
 }
 .WhyUsImg{
-    @apply h-[75vh] w-5/12 absolute mt-[-9vh] ml-32 rounded-xl shadow-lg border-2
+    @apply md:h-[75vh] mob:h-1/3 z-10 md:w-5/12 absolute 
+    rounded-xl shadow-lg border-2 md:left-32
+    mob:w-7/12 mob:top-0 
 }
 .WhyUsDesc{
-    @apply flex flex-col p-3 pr-12  text-center gap-3
+    @apply h-full md:w-6/12 flex flex-col md:gap-3 justify-center items-center mob:pt-10
+     
 }
-.WhyUsDesc >h1 {
-@apply text-FrontPageHeadSize font-bold text-primaryGreen mob:text-4xl
+.WhyUsDesc>h1{
+    @apply md:text-FrontPageHeadSize mob:text-FrontPageHeadSizeMobile 
+    font-semibold text-primaryGreen
 }
+
+
 .WhyUsDesc>div>div{
-    @apply flex flex-col gap-2
+    @apply flex flex-col items-center text-center
 }
-.WhyUsDesc>div>div >h3 {
-    @apply text-FrontPageSubHeadSize font-medium text-primaryGray
-    }
-.WhyUsDesc>div>div >p {
-    @apply text-sm text-primaryGray
+.WhyUsDesc>div>div>h3{
+    @apply text-FrontPageSubHeadSize text-primaryGray font-medium
+}
+.WhyUsDesc>div>div>p{
+    @apply text-sm text-lightGray
 }
 @media screen and (max-width: 760px) {
 }
+
+
+/*-------------------------Technology----------------------*/
+
+.TechnologyMain{
+    @apply  h-[93vh] flex justify-center
+}
+.TechnologySub{
+    @apply md:w-10/12 flex justify-end pt-5 pb-5 mob:flex-col
+}
+.TechnologyTexts{
+    @apply md:w-1/2 flex flex-col gap-5
+     text-center justify-center
+}
+.TechnologyTexts>h1{
+@apply text-FrontPageHeadSize mob:text-FrontPageHeadSizeMobile
+ text-primaryGreen font-semibold
+}
+.TechnologyTexts>h3{
+    @apply text-FrontPageSubHeadSize mob:text-lg text-primaryGray font-medium
+}
+.TechnologyTexts>p{
+    @apply p-5 text-justify text-lightGray text-sm mob:text-xs
+}
+.TechnologySvg{
+    @apply flex flex-wrap justify-evenly md:w-1/2 gap-10 
+    md:shadow-lg md:rounded-xl md:border-2 mob:p-3 md:pt-5 md:pb-5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@ const ClickEvent = ()=>{
 }
     const list =[
         {name:"HOME",link:"/"},
-        {name:"ABOUT",link:"/about"},
+        {name:"ABOUT",link:"/About"},
         {name:"CONTACT",link:"/contact"},
         {name:"SERVICES",link:"/services"},
         {name:"PROJECTS",link:"/projects"},

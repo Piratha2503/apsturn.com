@@ -61,6 +61,7 @@ const config: Config = {
       fontSize:{
         "FrontPageHeadSize": "8vh",
         "FrontPageSubHeadSize": "2.6vh",
+        "FrontPageHeadSizeMobile": "4vh",
       },
       fontStyle: {
         'italic': 'italic',

@@ -30,9 +30,9 @@ const Slides = () => {
   }, []);
 
   return (
-   <div className='h-[35vh] p-3 z-0 '>
+   <div className='h-[35vh] p-3 z-0'>
      <swiper-container pagination="true" pagination-clickable="true" autoplay-delay='3000'
-      ref={swiperElRef} slides-per-view={window.innerWidth < 768 ? 3 : 5}
+      ref={swiperElRef} slides-per-view= '5'
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
     >
