@@ -1,5 +1,5 @@
 import React from 'react';
-import LearnImg from "../imgs/company/Learn.svg";
+import LearnImg from "../imgs/company/learn.svg";
 import Image from 'next/image';
 const Culture = () => {
     return (
